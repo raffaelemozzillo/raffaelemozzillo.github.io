@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<!--
+	Linear by TEMPLATED
+    templated.co @templatedco
+    Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>e-st@r-I and -II</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+	</head>
+	<body>
+	<!-- Header -->
+		<div id="header">
+			<div id="nav-wrapper"> 
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="index.html#main">Back to Projects</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#">e-st@r-I and -II</a></h1>
+					<span class="tag">5 years and counting in the PoliTo CubeSat Team</span>
+				</div>
+			</div>
+		</div>
+	<!-- Header --> 
+
+	<!-- Main -->
+		<div id="main">
+			<div class="container">
+			<section>
+						<p>On February 2011 I joined the CubeSat Team of Politecnico di Torino. At the time, <strong>e-st@r-I</strong> CubeSat project was in Phase D, so my contribution has been very limited, while I took a role in Phase E (launch occurred on February 2012) for the operations.</br>On the other side, I have been deeply involved on <strong>e-st@r-II</strong> CubeSat project in all phases, and actually still I am! More info abot e-st@r-II are available <a href="http://areeweb.polito.it/cubesat-team/missions/e-star-ii/">here</a>. Be aware of possible slow loading. </br> My contributions are briefly described below.</p>
+						</section>
+				<div class="row">
+					<!-- Sidebar -->
+					<div id="sidebar" class="4u">
+						<section>
+							<header>
+								<h2>Activities</h2>
+							</header>
+							<div class="row">
+								<section>
+								<header>
+								<h3>Subsystem level</h3>
+								</header>
+									<ul class="default">
+										<li><a href="#ADCS">ADCS</a></li>
+										<li><a href="#C&DH">C&DH</a></li>
+										<li><a href="#COMSYS">COMSYS</a></li>
+										<li><a href="#EPS">EPS</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="row">
+								<section>
+								<header>
+								<h3>System level</h3>
+								</header>
+									<ul class="default">
+										<li><a href="#AIV">AIV</a></li>
+                                                                                <li><a href="#SE">System Engineering</a></li>
+									</ul>
+								</section>
+							</div>
+						</section>
+                                                <section>
+							<header>
+								<h2>Links</h2>
+							</header> 
+							<div class="row">
+								<section>
+									<ul class="default">
+										<li><a href="http://www.esa.int/Education/CubeSats_-_Fly_Your_Satellite/Fly_Your_Satellite!_programme" target="_blank"><span>Fly Your Satellite! programme</span></a></li>
+										<li><a href="#C&DH">C&DH</a></li>
+										<li><a href="#COMSYS">COMSYS</a></li>
+										<li><a href="#EPS">EPS</a></li>
+									</ul>
+								</section>
+							</div>
+							
+						</section>
+					</div>
+					<!-- Content -->
+					
+					<div id="content" class="8u skel-cell-important">
+						<section>
+							<header>
+								<h2 id="ADCS">Attitude Determination and Control</h2>
+								<span class="byline">From system design to algorithm implementation</span>
+							</header>
+							<p>I led the design and development of the ADCS of e-st@r-II.</br> Here some activities are mentioned:
+							<ul style="list-style-type:square">
+								<li>Design and simulation in Matlab&reg;-Simulink&reg;</li>
+								<li>HW selection (e.g. Inertial Measurement Unit) and manufacturing (e.g. magnetic torquers)</li>
+								<li>IMU characterisation by means of Allan Deviation analysis</li>
+								<li>Magnetic torquers characterisation and functional testing</li>
+								<li>Algorithms development: B-dot control, Y-Thompson control, QUEST, QMethod, ESOQ, ESOQ2 and recursive filter (Multiplicative Extended Kalman Filter) for a specific under-observable case (3-axial magnetometer plus gyroscopes)</li>
+								<li>Implementation of the algorithms on flight microcontroller (ARM9) using C programming language</li>
+								<li>Testing and verification of the implemented algorithm with comparisons with Matlab/Simulink code</li>
+								<li>PWM outuput of microcontroller characterisation</li>
+								<!--<li>Definition of the high level architecture, and the interfaces between ADCS and C&DH systems.</li>-->
+							</ul>
+							</p>
+						</section>
+						<section>
+							<header>
+								<h2 id="C&DH">Command & Data Handling</h2>
+								<span class="byline">Targeted changes</span>
+							</header>
+							<p>Taking the heritage of e-st@r-I, I worked to define and implement new operative modes and telecommands first with my colleague <a href="https://it.linkedin.com/in/fabrizio-stesina-bb422963">Fabrizio</a> and then with <a href="https://it.linkedin.com/in/lorenzoferuglio">Lorenzo</a>. In addition, the activation sequence of the satellite was completely changed to meet new requirements.</p>
+						</section>
+						<section>
+							<header>
+								<h2 id="COMSYS">Communication</h2>
+								<span class="byline">Antenna deployement system and reverse engineering activities</span>
+							</header>
+							<p>The desing of the subsystem was done by two radio-amateurs of Bra (currently they work at ESA as RF engineers), so my contribution is limited to soldering of SMD components and verification at subsystem level (e.g. signal analysis using oscilloscope) .</p>
+							In addition, I was involved into the reworking of the antenna deployment system, which has changed considerably if compared to e-st@r-I, and reverse engineering of the e-st@r-I subsystem.
+						</section>
+						<section>
+							<header>
+								<h2 id="EPS">Electrical Power</h2>
+								<span class="byline">System characterisation</span>
+							</header>
+							<p>I was in charge of three important characterisation:
+							<ul style="list-style-type:square">
+								<li>Batteries (e.g. charge and discharge curves)</li>
+								<li>Solar panels (e.g. V-I graph and power output)</li>
+								<li>Telemetry</li>
+							</ul></p>
+						</section>
+                                                <section>
+							<header>
+								<h2 id="AIV">AIV</h2>
+								<span class="byline">Lab activities: the most exciting ones for a geek</span>
+							</header>
+							<p>I was involved in all the activities concerning the assembly and integration (from component level up to system level) of the satellite and the verification: the contributions range from soldering to epoxy application, from single equipment test up to whole satellite verification. Among various activities, it is worth mentioning the <strong>functional test campaign</strong> at ambient condition conducted at Politecnico di Torino during 2014 and the <strong>environmental test campaign</strong> performed at ESA-ESTEC during 1Q-2Q of 2015. The first consists of basic and full functional tests and mission tests. The other instead consists of <strong>Vibration Tests</strong> (random, quasi-static, sinusoidal) and <strong>Thermal Vacuum Cycling Test</strong> (1 non-operative cycle and 3 operative cycles). For each test, a detailed as-run procedure was established and followed.</p>
+						</section>
+
+						<section>
+							<header>
+								<h2 id="SE">System Engineering</h2>
+								<span class="byline"></span>
+							</header>
+							<p>For e-st@r-II, it was adopted a mixture of document-based and SysMl-based approaches. I dealt with typical System Engineering activities: mission objectives and success criteria definitions, functional trees, N2 diagram, block diagrams, requirements derivation and traceability.</br> Here is provided a list of documents in which I participated concretely. The documents are part of the ADP of e-st@r-II:
+<ul style="list-style-type:square">
+    <li><strong>Assembly Sequence</strong>, it aims at providing information about the assembly of the e-st@r-II CubeSat through detailed instruction on the correct sequence to be followed</li>
+    <li><strong>Critical Item List</strong>, it describes the critical items present in the e-st@r-II CubeSat</li>
+    <li><strong>CubeSat Acceptance Checklist</strong>, it is the document used to verify compliance of the CubeSat with respect to the specifications</li>
+    <li><strong>CubeSat Design Description</strong>, it describes into the details the e-st@r-II CubeSat, from the system point of view</li>
+    <li><strong>Declared Component List</strong>, it aims at providing a list of all components of e-st@r-II CubeSat</li>
+    <li><strong>Declared Material List</strong>, it aims at providing a list of all materials of e-st@r-II CubeSa</li>
+    <li><strong>Demande d'Utilisation Arianespace</strong>, it is required by launch provider and contains relevant information about the CubeSat</li>
+    <li><strong>Environmental Test Plan</strong>, it aims at providing information about the planning of the environmental tests to be performed on e-st@r-II CubeSat. The document guides the developer through the definition of the vibration and thermal-vacuum tests, giving information about the GSE and test facilities to be used, the personnel, organisation and management of the environmental tests campaign and its schedule</li>
+    <li><strong>Environmental Test Procedure</strong>, it aims at providing all the information required to fully define each test activity foreseen in Environmental Test Plan for the environmental test campaign. In particular, the requirements to be verified, the test approach and requirements for each related activity, the precise set-up, the GSE and pass/fail criteria for each test are described</li>
+    <li><strong>Environmental Test Reports</strong>, they were produced for TVC test campaign and Vibrations Test campaign. Each document is aimed at describing the tests conducted during the environmental test campaigns at ESA-ESTEC facilities, and at presenting the outputs and anomalies</li>
+    <li><strong>Environmental Test Specification</strong>, it provides the requirements for the activities identified in the Environmental Test Plan and it is used as a basis for writing the Environmental Test Procedure and the Environmental Test Report</li>
+    <li><strong>FDS-VCD</strong>, it is the Verification Control Document for Fly Your Satellite! Design Specifications. It defines, in matrix form, for each requirement to be verified,  the combination of the selected verification methods for the different verification levels at the applicable verification stages</li>
+    <li><strong>Functional Test Reports</strong>, they were numerous. One for each basic and full functional test performed during Fly Your Satellite! programme. It derives from the information contained in the Test Plan, Specification and Procedure document, and includes additional elements such as the completed as run procedure</li>
+    <li><strong>Functional Test Specification and Procedure</strong>, the purpose of this document is to describe the test requirements applicable to the functional test campaign of e-st@r-II CubeSat, test approach, item under test and set-up, required GSE, test tools, test instrumentation and measurement accuracy, test conditions, test sequence, test facility, pass/fail criteria, required documentation, participants and test schedule. The Test Specification provides the requirements for the activities identified in the Test Plan and it is used as a basis for writing the Test Procedures included at the end of this document. The Test Specification gives emphasis on requirements, the Test Procedures on the operative step by step instructions</li>
+    <li><strong>Memo</strong>, several memorandum were produced to provide to ESA specific information, ranging form info at component level up to system level, in a more concise way</li>
+    <li><strong>Mission Description Document</strong>, it is aimed to describe the e-st@r-II mission.  The purpose is to give a description of the mission, to provide input for the selection of the best architecture meeting the mission statement in iteration with the definition of the system specification. It presents how the objectives, operation profile, major system events and capabilities, contingencies and performance are expected to be achieved.The document structure goes through the definition of the mission requirements and mission architecture. Then a description of the mission scenario is provided, in terms of main mission phases, satellite operational modes, nominal orbit activities and contingencies, from the perspective of space and ground segments</li>
+    <li><strong>Mission Test Report</strong>, it is structured in a similar way to functional test reports, but it provides information about the mission test</li>
+    <li><strong>NCR</strong>, during the verification campaigns, several non-conformance occurred. A non-conformance report documents the details of a non-conformance identified in a quality audit or other process review. The objective of the report is to make an unambiguous, defensible, clear and concise definition of the problem so that corrective action can and will be initiated by management</li>
+    <li><strong>Outreach Planning Document</strong>, it describes the outreach activities planned and executed by the Team, as regards the e-st@r-II CubeSat and the participation into FYS programme</li>
+    <li><strong>Registration Status</strong>, it describes the activities performed by the CubeSat Team regarding ITU, IARU and UNOOSA registrations</li>
+    <li><strong>Request For Deviation</strong>, during the e-st@r-II life-cycle, some RFD were needed. The objective of the request for deviation is to be the vehicle for requiring and agreeing the departure from a customer's requirement that is part of an approved configuration baseline</li>
+    <li><strong>Request For Waiver</strong>, the objective of the RFW is to be the vehicle for requiring and agreeing to the use or the delivery of a product that does not conform to its approved product configuration baseline</li>
+    <li><strong>Review Item Discrepancy</strong>, more than 100 RIDs were created in FYS programme. RIDs are prepared to record identified problems and questions arising from the examination of the review documentation</li>
+    <li><strong>Safety Submission</strong>, it is required by launch provider and contains relevant safety information about the CubeSat</li>
+    <li><strong>Shipment Plan</strong>, it aims at providing information about the shipment of e-st@r-II to ESA/ESTEC facilities where environmental tests campaign will be conducted. The document includes the detailed description of all GSE items needed to conduct the environmental tests campaign that will be shipped to ESA/ESTEC in addition to the CubeSat. Moreover, a description of transportation method, responsible personnel and legal required documentation is provided</li>
+    <li><strong>Space Debris Mitigation Report</strong>, it reports the assessments, justifications and verification of compliance with ESA requirements about space debris regulations</li>
+    <li><strong>SSD-VCD</strong>, it is the VCD for system specifications. It defines, in matrix form, for each requirement to be verified, the combination of the selected verification methods for the different verification levels at the applicable verification stages</li>
+    <li><strong>System Specification Document</strong>, it includes all the requirements of e-st@r-II. For this project, requirements are classified as mission reqs, program reqs, functional reqs, physical reqs, design reqs, configuration reqs, and environmental reqs</li>
+    <li><strong>Test Report</strong>, several test reports were produced. They range from tests at component level up to system level. They include  about the test set-up, GSE used, as-run procedures and result analysis</li>
+    <li><strong>User Manual</strong>, its scope is to provide information and instructions to handle, operate and maintain the e-st@r-II CubeSat after its integration. The document structure goes through the description of verifications at system level to guarantee the correct functionality of the satellite prior the launch, detailing the requirements to be verified, the test facilities, set-up and required GSE. Then, handling procedures, storage life and transport constraints and a description of the inhibits installed on the satellite are provided</li>
+    </ul>
+</p>
+						</section>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	<!-- /Main -->
+
+	<!-- Tweet -->
+		<div id="tweet">
+			<div class="container">
+
+			</div>
+		</div>
+	<!-- /Tweet -->
+
+	<!-- Footer -->
+		<div id="footer">
+			<div class="container">
+        <section>
+          <header>
+            <h2>Get in touch</h2>
+            <span class="byline">Do you have an amazing idea to work on together?</span>
+          </header>
+          <a href="Files/RaffaeleMozzillo_CV.pdf" target="_blank">Curriculum Vitae</a>
+          <ul class="contact">
+            <li><a href="https://www.linkedin.com/in/raffaelemozzillo86" class="fa fa-linkedin" target="_blank"><span>LinkedIn</span></a></li>
+            <li><a href="mailto:mozzillo.raffaele@gmail.com" class="fa fa-envelope-o" target="_blank"><span>Gmail</span></a></li>
+            <li><a href="https://www.facebook.com/raffaele.mozzillo86" class="fa fa-facebook" target="_blank"><span>Facebook</span></a></li>
+            <p></p>
+            (+39) 3495949698
+          </ul>
+        </section>
+			</div>
+		</div>
+	<!-- /Footer -->
+
+	<!-- Copyright -->
+		<div id="copyright">
+      <div class="container">
+        Reference Design: <a href="http://templated.co">TEMPLATED</a>, modified by <a href="https://www.linkedin.com/in/raffaelemozzillo86">me</a>
+      </div>
+		</div>
+
+
+	</body>
+
+</html>
